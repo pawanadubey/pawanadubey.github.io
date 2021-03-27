@@ -1,74 +1,146 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pawan Dubey</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./style.css" />
-  </head>
-  <body>
-    <main>
-      <section class="glass">
-        <div class="dashboard">
-          <div class="user">
-            <img src="./images/avatar.png" alt="" />
-            <h3>Pawan Dubey</h3>
-            <p>DevOps Engineer</p>
-          </div>
-          <div class="links">
-            <div class="link">
-              <img src="./images/twitter.png" alt="" />
-              <h2><a style="text-decoration:none" href="https://www.twitter.com/pawanadubey">Twitter</a></h2>
-            </div>
-            <div class="link">
-              <img src="./images/linkedin.png" alt="" />
-              <h2><a style="text-decoration:none" href="https://www.linkedin.com/in/pawanadubey/">LinkedIn</a></h2>
-            </div>
-            <div class="link">
-              <img src="./images/medium.png" alt="" />
-              <h2><a style="text-decoration:none" href="https://pawanadubey.medium.com/">Medium</a></h2>
-            </div>
-            <div class="link">
-              <img src="./images/github.png" alt="" />
-              <h2><a style="text-decoration:none" href="https://github.com/pawanadubey/">Github</a></h2>
-            </div>
-          </div>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Portfolio - Pawan Dubey</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="mobile-menu-open" class="shadow-large">
+        <i class="fa fa-bars" aria-hidden="true"></i>
+    </div>
+    <!-- End #mobile-menu-toggle -->
+    <header>
+        <div id="mobile-menu-close">
+            <span>Close</span> <i class="fa fa-times" aria-hidden="true"></i>
         </div>
-        <div class="games">
-          <div class="status">
-            <h1>Experience</h1>
-            <input type="text" />
-          </div>
-          <div class="cards">
-            <div class="card">
-              <img src="./images/brandbank.png" alt="" />
-              <div class="card-info">
-                <h2>Nielsen Brandbank</h2>
-                <p>March, 2020 to Present</p>
-              </div>
-            </div>
-            <div class="card">
-              <img src="./images/capgemini.png" alt="" />
-              <div class="card-info">
-                <h2>Capgemini India</h2>
-                <p>Oct, 2017 to Feb 2020</p>
-              </div>
-            </div>
-            <div class="card">
-              <img src="./images/lti.png" alt="" />
-              <div class="card-info">
-                <h2>Larsen & Toubro Infotech</h2>
-                <p>Dec, 2014 to Sep, 2017</p>
-              </div>
-            </div>
-          </div>
+        <ul id="menu" class="shadow">
+            <li>
+                <a href="#experience">Experience</a>
+            </li>
+            <li>
+                <a href="#education">Education</a>
+            </li>
+            <li>
+                <a href="#skills">Skills</a>
+            </li>
+        </ul>
+    </header>
+    <!-- End header -->
+
+    <div id="lead">
+        <div id="lead-content">
+            <h1>Pawan Dubey</h1>
+            <h2>DevOps Engineer</h2>
         </div>
-      </section>
-    </main>
-  </body>
+        <!-- End #lead-content -->
+
+        <div id="lead-overlay"></div>
+
+        <div id="lead-down">
+            <span>
+                <i class="fa fa-chevron-down" aria-hidden="true"></i>
+            </span>
+        </div>
+        <!-- End #lead-down -->
+    </div>
+    <!-- End #lead -->
+
+    <div id="experience" class="background-alt">
+        <h2 class="heading">Experience</h2>
+        <div id="experience-timeline">
+            <div data-date="March 2020 – Present">
+                <h3>Nielsen Brandbank</h3>
+                <h4>DevOps Engineer</h4>
+            </div>
+
+            <div data-date="October 2017 – February 2020">
+                <h3>Capgemini India</h3>
+                <h4>Associate Consultant</h4>
+            </div>
+
+            <div data-date="December 2014 – September 2017">
+                <h3>Larsen & Toubro Infotech (LTI)</h3>
+                <h4>Software Developer</h4>
+            </div>
+        </div>
+    </div>
+    <!-- End #experience -->
+
+    <div id="education">
+        <h2 class="heading">Education</h2>
+        <div class="education-block">
+            <h3>University of Mumbai</h3>
+            <span class="education-date">August 2011 - July 2014</span>
+            <h4>Bachelor of Science in Information Technology</h4>
+        </div>
+        <!-- End .education-block -->
+    </div>
+    <!-- End #education -->
+
+    <div id="skills">
+        <h2 class="heading">Skills</h2>
+        <ul>
+            <li>Azure</li>
+            <li>PowerShell</li>
+            <li>Terraform</li>
+            <li>Ansible</li>
+            <li>Jenkins</li>
+            <li>BitBucket</li>
+            <li>Azure DevOps</li>
+            <li>Docker</li>
+            <li>Kubernetes</li>
+        </ul>
+    </div>
+    <!-- End #skills -->
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-5 copyright">
+                    <p>
+                        Copyright &copy;
+                        <script>document.write(new Date().getFullYear())</script>
+                        PAWAN DUBEY
+                    </p>
+                </div>
+                <div class="col-sm-2 top">
+                    <span id="to-top">
+                        <i class="fa fa-chevron-up" aria-hidden="true"></i>
+                    </span>
+                </div>
+                <div class="col-sm-5 social">
+                    <ul>
+                        <li>
+                            <a href="https://github.com/pawanadubey" target="_blank"><i class="fa fa-github"
+                                    aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://linkedin.com/in/pawanadubey" target="_blank"><i class="fa fa-linkedin"
+                                    aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/pawanadubey" target="_blank"><i class="fa fa-twitter"
+                                    aria-hidden="true"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End footer -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/scripts.min.js"></script>
+</body>
+
 </html>
