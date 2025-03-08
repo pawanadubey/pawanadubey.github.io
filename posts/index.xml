@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Pawan Dubey</title>
-    <link>http://localhost:1313/posts/</link>
+    <link>https://pawanadubey.github.io/posts/</link>
     <description>Recent content in Posts on Pawan Dubey</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 08 Mar 2025 15:25:19 +0530</lastBuildDate><atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 08 Mar 2025 15:25:19 +0530</lastBuildDate><atom:link href="https://pawanadubey.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Build Your Own Perplexity AI Using Ollama and Msty</title>
-      <link>http://localhost:1313/posts/build-your-own-perplexity/</link>
+      <link>https://pawanadubey.github.io/posts/build-your-own-perplexity/</link>
       <pubDate>Sat, 08 Mar 2025 15:25:19 +0530</pubDate>
       
-      <guid>http://localhost:1313/posts/build-your-own-perplexity/</guid>
+      <guid>https://pawanadubey.github.io/posts/build-your-own-perplexity/</guid>
       <description>&lt;p&gt;Perplexity is an AI-powered search engine that provides answers by referring to internet sources. It allows users to switch between different large language models (LLMs) to process and generate responses. However, switching models is only available in the Pro version.&lt;/p&gt;
 &lt;p&gt;If you want a similar solution that runs on your own machine, you can use &lt;strong&gt;Ollama&lt;/strong&gt; and &lt;strong&gt;Msty&lt;/strong&gt;. This will allow you to have a &lt;strong&gt;custom AI assistant&lt;/strong&gt; that can work locally and access the internet when needed.&lt;/p&gt;</description>
       <content>&lt;p&gt;Perplexity is an AI-powered search engine that provides answers by referring to internet sources. It allows users to switch between different large language models (LLMs) to process and generate responses. However, switching models is only available in the Pro version.&lt;/p&gt;
