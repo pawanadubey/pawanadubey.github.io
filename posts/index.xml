@@ -8,13 +8,62 @@
     <language>en-us</language>
     <lastBuildDate>Sat, 08 Mar 2025 15:25:19 +0530</lastBuildDate><atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Build Your Own Perplexity</title>
+      <title>Build Your Own Perplexity AI Using Ollama and Msty</title>
       <link>http://localhost:1313/posts/build-your-own-perplexity/</link>
       <pubDate>Sat, 08 Mar 2025 15:25:19 +0530</pubDate>
       
       <guid>http://localhost:1313/posts/build-your-own-perplexity/</guid>
-      <description></description>
-      <content></content>
+      <description>&lt;p&gt;Perplexity is an AI-powered search engine that provides answers by referring to internet sources. It allows users to switch between different large language models (LLMs) to process and generate responses. However, switching models is only available in the Pro version.&lt;/p&gt;
+&lt;p&gt;If you want a similar solution that runs on your own machine, you can use &lt;strong&gt;Ollama&lt;/strong&gt; and &lt;strong&gt;Msty&lt;/strong&gt;. This will allow you to have a &lt;strong&gt;custom AI assistant&lt;/strong&gt; that can work locally and access the internet when needed.&lt;/p&gt;</description>
+      <content>&lt;p&gt;Perplexity is an AI-powered search engine that provides answers by referring to internet sources. It allows users to switch between different large language models (LLMs) to process and generate responses. However, switching models is only available in the Pro version.&lt;/p&gt;
+&lt;p&gt;If you want a similar solution that runs on your own machine, you can use &lt;strong&gt;Ollama&lt;/strong&gt; and &lt;strong&gt;Msty&lt;/strong&gt;. This will allow you to have a &lt;strong&gt;custom AI assistant&lt;/strong&gt; that can work locally and access the internet when needed.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;what-is-ollama&#34;&gt;What is Ollama?&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Ollama&lt;/strong&gt; is a tool that lets you &lt;strong&gt;download and run LLM models&lt;/strong&gt; locally on your machine. It provides a simple way to work with AI models without needing cloud-based services.&lt;/p&gt;
+&lt;h3 id=&#34;installing-ollama&#34;&gt;Installing Ollama&lt;/h3&gt;
+&lt;p&gt;To install Ollama:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Go to &lt;a href=&#34;https://ollama.com/download&#34;&gt;Ollama’s official website&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Download the setup file for your operating system.&lt;/li&gt;
+&lt;li&gt;Install it following the on-screen instructions.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Once installed, you can check all the available models at &lt;a href=&#34;https://ollama.com/library&#34;&gt;Ollama’s model library&lt;/a&gt;. Some popular models include:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Llama 3&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Mistral&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;DeepSeek&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Phi 4&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;running-an-ai-model-with-ollama&#34;&gt;Running an AI Model with Ollama&lt;/h3&gt;
+&lt;p&gt;To download and run &lt;strong&gt;Llama 3&lt;/strong&gt;, use the following command in your terminal or command prompt:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;ollama run llama3
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Similarly, you can install and run other models using their respective names.&lt;/p&gt;
+&lt;h3 id=&#34;using-ollama-with-an-api&#34;&gt;Using Ollama with an API&lt;/h3&gt;
+&lt;p&gt;By default, Ollama runs in the &lt;strong&gt;command-line interface (CLI)&lt;/strong&gt;, but it also provides an &lt;strong&gt;API&lt;/strong&gt; for developers. You can start the API server with:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;ollama serve
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;This allows applications to communicate with your local AI model. You can find the full API guide &lt;a href=&#34;https://github.com/ollama/ollama/blob/main/docs/api.md&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;what-is-msty&#34;&gt;What is Msty?&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Msty&lt;/strong&gt; is a desktop application that provides a &lt;strong&gt;user-friendly interface&lt;/strong&gt; to interact with AI models. It supports both local and online AI models and also allows them to access the internet.&lt;/p&gt;
+&lt;h3 id=&#34;installing-msty&#34;&gt;Installing Msty&lt;/h3&gt;
+&lt;p&gt;To install Msty:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Visit &lt;a href=&#34;https://docs.msty.app/getting-started/download&#34;&gt;Msty’s official download page&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Download the installer for your operating system.&lt;/li&gt;
+&lt;li&gt;Install it by following the instructions.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;using-msty&#34;&gt;Using Msty&lt;/h3&gt;
+&lt;p&gt;Once installed, open Msty, and you will see a user interface similar to &lt;strong&gt;Perplexity AI&lt;/strong&gt;. Msty allows you to:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Switch between &lt;strong&gt;different local AI models&lt;/strong&gt; (e.g., Llama 3, Mistral).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Enable internet access&lt;/strong&gt; for AI models to fetch external information.&lt;/li&gt;
+&lt;li&gt;Adjust &lt;strong&gt;temperature, max output tokens, and context window size&lt;/strong&gt; for better control over AI responses.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;By combining &lt;strong&gt;Ollama&lt;/strong&gt; and &lt;strong&gt;Msty&lt;/strong&gt;, you can create a &lt;strong&gt;powerful AI assistant&lt;/strong&gt; that runs on your own machine, similar to Perplexity AI. Ollama lets you run AI models locally, while Msty provides an easy-to-use interface and internet access for better answers.&lt;/p&gt;
+&lt;p&gt;If you are interested in AI but want more control over &lt;strong&gt;models, privacy, and cost&lt;/strong&gt;, this setup is a great alternative. Try it out and build your own AI-powered assistant!&lt;/p&gt;
+</content>
     </item>
     
   </channel>
